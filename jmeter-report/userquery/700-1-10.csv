@@ -1,0 +1,3 @@
+Label,# Samples,Average,Min,Max,Std. Dev.,Error %,Throughput,Received KB/sec,Sent KB/sec,Avg. Bytes
+12306-userservice-query:HTTP Request,7000,439,8,872,114.32,0.000%,1211.28223,550.05,180.98,465.0
+TOTAL,7000,439,8,872,114.32,0.000%,1211.28223,550.05,180.98,465.0

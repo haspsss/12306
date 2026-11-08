@@ -1,0 +1,10 @@
+2026-10-07 22:52:56,579 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-10-07 22:52:56,613 INFO o.a.j.JMeter: Loading user properties from: D:\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\user.properties
+2026-10-07 22:52:56,614 INFO o.a.j.JMeter: Loading system properties from: D:\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\system.properties
+2026-10-07 22:52:56,615 ERROR o.a.j.JMeter: An error occurred: 
+java.lang.IllegalArgumentException: Unknown arg: D:\apache-jmeter-5.6.3\report\12306\ticketsearch\ticket-search.jmx
+	at org.apache.jmeter.JMeter.initializeProperties(JMeter.java:796) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeter.start(JMeter.java:379) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:259) [ApacheJMeter.jar:5.6.3]
