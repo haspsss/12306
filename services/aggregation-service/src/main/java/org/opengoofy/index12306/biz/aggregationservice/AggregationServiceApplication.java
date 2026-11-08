@@ -29,14 +29,19 @@ import org.springframework.retry.annotation.EnableRetry;
  * 12306 聚合服务应用启动器
  * 公众号：马丁玩编程，回复：加群，添加马哥微信（备注：12306）获取项目资料
  */
+import org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration; // 👈 新增这行导包
+
 @EnableDynamicThreadPool
-@SpringBootApplication(scanBasePackages = {
-        "org.opengoofy.index12306.biz.userservice",
-        "org.opengoofy.index12306.biz.ticketservice",
-        "org.opengoofy.index12306.biz.orderservice",
-        "org.opengoofy.index12306.biz.payservice",
-        "org.opengoofy.index12306.biz.aggregationservice"
-})
+@SpringBootApplication(
+        scanBasePackages = {
+                "org.opengoofy.index12306.biz.userservice",
+                "org.opengoofy.index12306.biz.ticketservice",
+                "org.opengoofy.index12306.biz.orderservice",
+                "org.opengoofy.index12306.biz.payservice",
+                "org.opengoofy.index12306.biz.aggregationservice"
+        }
+)
+
 @EnableRetry
 @MapperScan(value = {
         "org.opengoofy.index12306.biz.userservice.dao.mapper",

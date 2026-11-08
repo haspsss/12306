@@ -52,7 +52,10 @@ public class TicketController {
     public Result<TicketPageQueryRespDTO> pageListTicketQuery(TicketPageQueryReqDTO requestParam) {
         return Results.success(ticketService.pageListTicketQueryV1(requestParam));
     }
-
+    @GetMapping("/api/ticket-service/ticket/query/v2")
+    public Result<TicketPageQueryRespDTO> pageListTicketQueryV2(TicketPageQueryReqDTO requestParam) {
+        return Results.success(ticketService.pageListTicketQueryV2(requestParam));
+    }
     /**
      * 购买车票
      */
